@@ -63,7 +63,7 @@ else {
         <tr>
           <th scope="row"><?= $anime["animeId"] ?></th>
           <td><?= $anime["title"] ?></td>
-          <td><img src="\poster\DQilo1Ze\fern.PNG" class="poster"></td>
+          <td><img src="/<?= substr($anime["poster"],32); ?>" class="poster"></td>
           <td><?= $anime["studio"] ?></td>
           <td><?= $anime["releaseDate"] ?></td>
           <td>
